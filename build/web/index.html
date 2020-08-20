@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Estetica_Barberia</title>
+        <style> 
+		body{
+		background: url(https://images-na.ssl-images-amazon.com/images/I/A1YIvLqJFGL._AC_SX522_.jpg);
+                
+    
+    background-color: #FFFAF0;
+    font-family: 'Verdana';
+    size: 28px;
+    justify-content: center;
+}
+
+        .caja ul li{
+width: 130px;
+		float: center;
+		margin: 15px auto;
+		background-color: #BDB76B;
+		padding-right: 30px;
+		padding-left: 30px;
+		text-align: center;}
+.caja tr td a{ text-decoration: none;
+			color: white;}
+.caja tr td{ background-color: #B4E100; }
+.caja tr tf a:hover{ color:window;  }
+.caj{ background-color: #FF0000; }
+</style>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="caja">
+            <h1 class="caj">Registro de Citas BARBER</h1>
+            <br>
+            <form action="Guardar_cliente" method="post" name="formulario" >
+                <table border="1" >
+                    <tr><td style = "font-family:courier,arial,helvética;">Nombre: </td><td><input type="text" name="nombre" ></td></tr>
+                    <tr><td style = "font-family:courier,arial,helvética;">Apellido </td><td><input type="text" name="apellido" ></td></tr>
+                    <tr><td style = "font-family:courier,arial,helvética;">Telefono </td><td><input type="text" name="telefono" ></td></tr>
+                    <tr><td style = "font-family:courier,arial,helvética;">Email </td><td><input type="email" name="email" ></td></tr>
+                    <tr><td style = "font-family:courier,arial,helvética;">Lugar</td>
+                        <td><select name="lugar" style="width:220px" >
+                                <option style = "font-family:courier,arial,helvética;">CDMX</option>
+                                <option style = "font-family:courier,arial,helvética;">EDOMEX</option>
+                                <option style = "font-family:courier,arial,helvética;">CENTRO</option>
+                                <option style = "font-family:courier,arial,helvética;">OTRO</option>
+                        </select></td>
+                    </tr>
+                    <tr><td colspan="2" > <input type="submit" value="Guardar Registro" > </td></tr>
+                </table>
+            </form>
+        </div>
+        <div>
+            <button><a href="Consultar_clientes" ><h1>Consultar Clientes</h1></a></button>
+            <button><a href="principal.html" ><h1>Regresar</h1></a></button>
+        </div>
+    </body>
+</html>
